@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPhotos</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/homepage_profile.css">
+    <link rel="stylesheet" href="css/my_photos.css">
+    <link rel="stylesheet" href="css/log_in.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/my_photos.js" defer="defer"></script>
+</head>
+<body>
+
+<!-- banner-body -->
+<div class="container">
+    <div class="up">
+        <div class="container-left">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="out-bounder-icon">
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item ch-img-3">
+                            <div class="ch-info-wrap">
+                                <div class="ch-info">
+                                    <div class="ch-info-front ch-img-3" id="profile"></div>
+                                    <div class="ch-info-back">
+                                        <h3 id="username">Leadership Series #3</h3>
+                                        <p id="email">by Dustin Leer </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="all">
+                <div class="leaderBoard">
+                    <h1>Menu</h1>
+                    <ul>
+                        <li>
+                            <mark>Home</mark>
+                            <small>Home</small>
+                        </li>
+                        <li>
+                            <mark>My Photos</mark>
+                            <small>My Photos</small>
+                        </li>
+                        <li>
+                            <mark>Upload</mark>
+                            <small>Upload</small>
+                        </li>
+                        <li>
+                            <mark>Trevor</mark>
+                            <small>245</small>
+                        </li>
+                        <li>
+                            <mark>Login</mark>
+                            <small>Login</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+            <figure class="allPhotos">
+                <figcaption>
+                    <h2 id="title1">Stuart <span>White</span></h2>
+                    <p id="description1"> I suppose if we couldn't laugh at things that don't make sense, we couldn't react to a lot of life.</p>
+                </figcaption>
+                <img src="images/img02.jpg" class="images" alt="" id="image1">
+            </figure>
+
+            <figure class="allPhotos">
+                <figcaption>
+                    <h2 id="title2">Stuart <span>White</span></h2>
+                    <p id="description2">I suppose if we couldn't laugh at things that don't make sense, we couldn't react to a lot of life.</p>
+                </figcaption>
+                <img src="images/1.jpeg" class="images" alt="" id="image2">
+            </figure>
+
+            <figure class="allPhotos">
+                <figcaption>
+                    <h2 id="title3">Stuart <span>White</span></h2>
+                    <p id="description3">I suppose if we couldn't laugh at things that don't make sense, we couldn't react to a lot of life.</p>
+                </figcaption>
+                <img src="images/1.jpeg" class="images" alt="" id="image3">
+            </figure>
+
+            <figure class="allPhotos">
+                <figcaption>
+                    <h2 id="title4">Stuart <span>White</span></h2>
+                    <p id="description4">I suppose if we couldn't laugh at things that don't make sense, we couldn't react to a lot of life.</p>
+                </figcaption>
+                <img src="images/1.jpeg" class="images" alt="" id="image4">
+            </figure>
+        </div>
+    </div>
+</div>
+
+<!--bottom-->
+<div class="bottom">
+    <div class="line"></div>
+    <div class = "bc">
+        <dl class="dl1">
+            <dt>&#8226 About</dt>
+            <dd>This website is developed by Html5, css and Js</dd>
+            <dd>This is a BSS website for sharing and posting.</dd>
+            <dd>XXXXXXXXXXXXXXXXXxx xxxxxxxxxxxxxxxxxx</dd>
+        </dl>
+        <div>
+            <img src="images/line.png" alt="">
+        </div>
+        <dl class="dl2">
+            <dt>&#8226 Contact Us</dt>
+            <dd>Ariel 12345678@qq.com</dd>
+            <dd>XX 12345679@qq.com</dd>
+            <dd>xxx 123456789@qq.com</dd>
+        </dl>
+    </div>
+</div>
+
+<!--click image to zoom in-->
+<div class="mask">
+    <div class="zoom-img"></div>
+    <img src="images/cross.png" alt="" class="close1">
+</div>
+
+<!--login mask-->
+<div class="mask1"></div>
+<div class="login">
+    <div class="form-bg">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <form class="fh">
+                        <img src="images/cross.png" alt="" class="close">
+                        <div class="heading2">Login to your account</div>
+                        <div class="form-group">
+                            <i>
+                                <img src="images/people_icon.png" alt="" class="people_lock">
+                            </i>
+                            <input required oninvalid="setCustomValidity('cannot be empty')" oninput="setCustomValidity('')" name="login[username]" type="text" class="control" placeholder="Username" id="insertUsernameBox">
+                        </div>
+                        <div class="form-group">
+                            <i>
+                                <img src="images/lock.png" alt="" class="lock">
+                            </i>
+                            <input required oninvalid="setCustomValidity('cannot be empty')" oninput="setCustomValidity('')" name="login[password]" type="password" class="control" placeholder="Password" id="insertPasswordBox">
+                        </div>
+                        <div class="group">
+                            <button type="button" class="btn_s" id="loginSubmitButton">
+                                <i>
+                                    <img src="images/arrow.png" alt="" class="arrow">
+                                </i>
+                            </button>
+                            <span>Don't have an account?&nbsp&nbsp&nbsp
+                               <a href="register.html" class="create_account">Sign up</a>
+                           </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--upload window-->
+<div class="wrap">
+    <img src="images/cross.png" alt="" class="close2">
+    <div class="thumb">
+        <img id="img" src=""/>
+    </div>
+    <form action="">
+        <label for="upload">
+          UPLOAD
+          <input type='file' id="upload">
+        </label>
+        <input type="text" value="title" id="insertTitleBox">
+        <input type="text" value="description" id="insertDescriptionBox">
+        <button type="button" class="btn_s" id="uploadSubmitButton">
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/log_in.css">
+    <script src="js/register.js" defer="defer"></script>
+</head>
+
+<body>
+<!--head-->
+<div class="head">
+    <div class="head-content">
+        <div>
+            <img src="images/logo.png" alt="">
+        </div>
+        <div>
+            <p>Log In</p>
+        </div>
+        <div>
+            <a href="">Home</a>
+        </div>
+    </div>
+</div>
+
+<!--register content-->
+<div class="center">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <form class="form-horizontal">
+                <span class="heading">New User</span>
+                <div class="form-group">
+                    <img src="images/people_icon.png" alt="">
+                    <input type="text" class="form-control" placeholder="enter username">
+                </div>
+                <div class="form-group help">
+                    <img src="images/lock.png" alt="">
+                    <input type="password" class="form-control" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <img src="images/lock.png">
+                    <input type="password" class="form-control" placeholder="confirm password">
+                </div>
+                <div class="form-group">
+                    <img src="images/email.png">
+                    <input type="text" class="form-control" placeholder="enter email">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--bottom-->
+<div class="bottom">
+    <div class="line"></div>
+    <div class = "bc">
+        <dl class="dl1">
+            <dt>&#8226 About</dt>
+            <dd>This website is developed by Html5, css and Js</dd>
+            <dd>This is a BSS website for sharing and posting.</dd>
+            <dd>XXXXXXXXXXXXXXXXXxx xxxxxxxxxxxxxxxxxx</dd>
+        </dl>
+        <div>
+            <img src="images/line.png" alt="">
+        </div>
+        <dl class="dl2">
+            <dt>&#8226 Contact Us</dt>
+            <dd>Ariel 12345678@qq.com</dd>
+            <dd>XX 12345679@qq.com</dd>
+            <dd>xxx 123456789@qq.com</dd>
+        </dl>
+    </div>
+</div>
+
+<!--login window-->
+<div class="mask"></div>
+<div class="login">
+    <div class="form-bg">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <form class="fh">
+                        <img src="images/cross.png" alt="" class="close">
+                        <div class="heading2">Login to your account</div>
+                        <div class="form-group">
+                            <i>
+                                <img src="images/people_icon.png" alt="" class="people_lock">
+                            </i>
+                            <input required oninvalid="setCustomValidity('cannot be empty')" oninput="setCustomValidity('')" name="login[username]" type="text" class="control" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <i>
+                                <img src="images/lock.png" alt="" class="lock">
+                            </i>
+                            <input required oninvalid="setCustomValidity('cannot be empty')" oninput="setCustomValidity('')" name="login[password]" type="password" class="control" placeholder="Password">
+                        </div>
+                        <div class="group">
+                            <button type="submit" class="btn_s">
+                                <i>
+                                    <img src="images/arrow.png" alt="" class="arrow">
+                                </i>
+                            </button>
+                            <span>Don't have an account?&nbsp&nbsp&nbsp
+                               <a href="register.html" class="create_account">Sign up</a>
+                           </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

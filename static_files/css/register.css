@@ -1,0 +1,214 @@
+.head{
+    height: 5em;
+    background-color: #666666;
+    box-shadow: 0 7px 5px -5px #888888;
+}
+
+p{
+    cursor: pointer;
+}
+
+.head-content{
+    width: 80em;
+    margin: 0 auto;
+}
+
+.head-content>div>img{
+    height: 3em;
+    float: left;
+    margin: 0.9em 0;
+}
+
+.head-content>div:first-child{
+    padding-left: 3rem;
+    float: left;
+}
+
+.head-content>div:nth-child(3) {
+    line-height: 3.3em;
+    font-size: 1.5em;
+    margin-right: 3em;
+    float: right;
+}
+
+.head-content>div:nth-child(2) {
+    line-height: 3.3em;
+    font-size: 1.5em;
+    margin-right: 3em;
+    color: white;
+    float: right;
+}
+
+.logo{
+    height: 4em;
+    width: 100%;
+}
+
+.logo>ul{
+    margin-top: 2em;
+}
+
+.logo>ul>li{
+    float:left;
+}
+
+.logo>ul>li>img{
+    margin-left: 2.5em;
+    margin-right: 1em;
+    margin-top: 2em;
+    height: 3em;
+}
+
+.logo>ul>li>p{
+    margin-right: 1em;
+    font-size: 2em;
+    margin-top: 1.3em;
+    color: darkslategray;
+}
+
+.center{
+    width: 80em;
+    margin: 0 auto;
+    background-color: #E3E3E3;
+}
+
+.form-bg{
+    background: #00b4ef;
+}
+.form-horizontal{
+    background: #fff;
+    padding-bottom: 4em;
+    margin-top:4em;
+    margin-bottom: 4em;
+    border-radius: 1.5em;
+    text-align: center;
+}
+.form-horizontal .heading{
+    display: block;
+    font-size: 3.5em;
+    font-weight: 700;
+    padding: 1em 0;
+    border-bottom: 0.1em solid #f0f0f0;
+    margin-bottom: 1em;
+}
+.form-horizontal .form-group{
+    padding: 0 4em;
+    margin: 0 0 2.5em 0;
+    position: relative;
+}
+.form-horizontal .form-control{
+    background: #f0f0f0;
+    border: none;
+    border-radius: 2em;
+    box-shadow: none;
+    padding: 0 2em 0 4.5em;
+    height: 4em;
+    transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-control:focus{
+    background: #e0e0e0;
+    box-shadow: none;
+    outline: 0 none;
+}
+.form-horizontal .form-group img{
+    position: absolute;
+    height: 2em;
+    top: 1.5em;
+    left: 30em;
+}
+
+.form-horizontal .fa-question-circle{
+    display: inline-block;
+    position: absolute;
+    top: 1.2em;
+    right: 6em;
+    font-size: 2em;
+    color: #808080;
+    transition: all 0.5s ease 0s;
+}
+
+.form-horizontal .fa-question-circle:hover{
+    color: #000;
+}
+
+
+.form-horizontal .text{
+    float: left;
+    margin-left: 0.7em;
+    line-height: 2em;
+    padding-top: 0.5em;
+    text-transform: capitalize;
+}
+.form-horizontal .btn{
+    font-size: 1.4em;
+    color: #fff;
+    width:17em;
+    background: #79b5b5;
+    border-radius: 3em;
+    padding: 1em 2.5em;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+@media only screen and (max-width: 48em) {
+    .form-horizontal .form-group {
+        padding: 0 2.5em;
+    }
+
+    .form-horizontal .form-group i {
+        left: 4.5em;
+    }
+
+    .form-horizontal .btn {
+        padding: 1em 2em;
+    }
+}
+
+.bottom{
+    width: 80em;
+    height: 8em;
+    margin: 4em auto 4em auto;
+}
+
+.line{
+    width: 80rem;
+    height: 0.1rem;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #D5D5D5;
+    overflow: hidden;
+}
+
+.bc{
+    margin: 0 3em;
+}
+
+.bc>dl{
+    text-align: left;
+    float: left;
+    font-size: 1em;
+    color: #5A5C51;
+    margin: 2em 0 0 3em;
+}
+
+.bc>dl>dt{
+    line-height: 2em;
+    font-weight: bolder;
+}
+
+.bc>dl>dd{
+    line-height: 1.5em;
+}
+
+.bc>dl:last-child{
+    margin-left: 10rem;
+}
+
+.bottom img{
+    height: 6rem;
+    float: left;
+    margin: 2.5rem 0 0 9.5rem;
+}
+
+
